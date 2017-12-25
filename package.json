@@ -1,26 +1,24 @@
 {
-    "name": "post-it",
-    "version": "0.0.1",
-    "description": "PostIt is a simple application that allows friends and colleagues create groups for notifications. ",
-    "main": "./server/server.js",
-    "scripts": {
-      "dev": "nodemon ./server/server.js"
-    },
-    "dependencies": {
-      "body-parser": "^1.18.2",
-      "dotenv": "^4.0.0",
-      "express": "^4.16.2",
-      "jsonwebtoken": "^8.1.0",
-      "mongoose": "^4.13.2",
-      "ramda": "^0.25.0"
-    },
-    "devDependencies": {
-      "nodemon": "^1.12.1"
-    },
-    "author": "paulupendo",
-    "license": "ISC",
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/paulupendo/Messaging-App-API/tree/setup"
-    }
+  "name": "post-it",
+  "version": "0.0.1",
+  "description": "PostIt is a simple application that allows friends and colleagues create groups for notifications. ",
+  "main": "./server/server.js",
+  "scripts": {
+    "dev": "nodemon ./server/server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.2",
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "author": "paulupendo",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulupendo/Messaging-App-API/tree/setup"
   }
+}
