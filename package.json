@@ -21,11 +21,6 @@
     "license": "ISC",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/paulupendo/Post-It.git"
-    },
-    "bugs": {
-      "url": "https://github.com/paulupendo/Post-It/issues"
-    },
-    "homepage": "https://github.com/paulupendo/Post-It#readme"
+      "url": "git+https://github.com/paulupendo/Messaging-App-API/tree/setup"
+    }
   }
-  
