@@ -4,6 +4,8 @@
  */
 import express from 'express'
 import bodyparser from 'body-parser'
+import mongoose from 'mongoose'
+import _config from '../config'
 
 var app = express() /** defines the app using express */
 var router = express.Router() /** get an instance of express router */
@@ -25,3 +27,7 @@ app.use('/api/', router) /** register routes */
 app.listen(port, () => {
   console.log('Yuri is live on port: ' + port)
 }) /** Start our server */
+
+mongoose.connect(_config.URI, {useMongoClient: true}, err => {
+  err && console.log(err.message)
+}) /** create connection to mongoDB via Mlab */
