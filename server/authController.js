@@ -50,7 +50,7 @@ module.exports = {
           console.log(err)
           res.json({ msg: 'Ooops! An error occured' })
         } else {
-          var userExists = users.some((user) => {
+          let userExists = users.some((user) => {
             return user.email === R.trim(userObj.email) && user.password === R.trim(userObj.password) /**
               * return true if user email and password match
               */
@@ -97,7 +97,7 @@ module.exports = {
   },
   ValidateUserAndSave: function (usersModel, UserMInstance, userObj, res) {
     usersModel.find((err, users) => { /** move this to own function during refactor */
-      var email = R.trim(userObj.email)
+      let email = R.trim(userObj.email)
       if (err) {
         console.log(err)
       } else {

@@ -3,8 +3,8 @@ import express from 'express'
 import authController from './authController'
 import _db from '../models/db_models'
 
-var router = express.Router()
-var userModel = new _db.Users() /** new instance of the User model */
+const router = express.Router()
+const userModel = new _db.Users() /** new instance of the User model */
 
 router.post('/signup', (req, res) => {
   let newUser = new authController.UserInfo(req.body.name, req.body.email, req.body.password, req.body.confirmPass) /**
@@ -26,7 +26,7 @@ router.post('/signup', (req, res) => {
 })
 
 router.post('/signin', (req, res) => {
-  var userObj = R.omit(['confirmPass', 'name'], new authController.UserInfo()) /**
+  let userObj = R.omit(['confirmPass', 'name'], new authController.UserInfo()) /**
    * create new user object instance omitting some properties
    */
   userObj.email = req.body.email
