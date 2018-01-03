@@ -8,10 +8,11 @@ import bodyparser from 'body-parser'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 
-var app = express() /** defines the app using express */
-var router = express.Router() /** get an instance of express router */
-var port = process.env.port || 8080
 dotenv.config()
+
+const app = express() /** defines the app using express */
+const router = express.Router() /** get an instance of express router */
+const port = process.env.port || 8080
 
 app.use(bodyparser.urlencoded({extended: true})) /**
  * Returns middleware that only parses urlencoded bodies.

@@ -2,8 +2,8 @@ import R from 'ramda'
 import _db from '../models/db_models'
 import authController from './authController'
 
-var groups = new _db.Groups()
-var messages = new _db.Messages()
+const groups = new _db.Groups()
+const messages = new _db.Messages()
 
 const isEmptyString = R.pipe(
   R.defaultTo(''),
